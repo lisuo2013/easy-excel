@@ -1,0 +1,29 @@
+<!-- XML编写约束文档 -->
+<!ELEMENT excels (excel)*>
+<!ELEMENT excel (field+)>
+<!ATTLIST excel id ID #REQUIRED>
+<!ATTLIST excel class CDATA #REQUIRED>
+<!ATTLIST excel sheetname CDATA #IMPLIED >
+<!ATTLIST excel defaultColumnWidth CDATA #IMPLIED >
+<!ATTLIST excel defaultAlign (center|left|right) #IMPLIED >
+<!ATTLIST excel sheetIndex CDATA #IMPLIED >
+<!ATTLIST excel requiredTag (true|false) #IMPLIED >
+<!ELEMENT field  EMPTY>
+<!ATTLIST field name CDATA #REQUIRED >
+<!ATTLIST field title CDATA #REQUIRED >
+<!ATTLIST field pattern CDATA #IMPLIED >
+<!ATTLIST field format CDATA #IMPLIED >
+<!ATTLIST field cellValueConverter CDATA #IMPLIED >
+<!ATTLIST field isNull (true|false) #IMPLIED >
+<!ATTLIST field regex CDATA #IMPLIED >
+<!ATTLIST field regexErrMsg CDATA #IMPLIED >
+<!ATTLIST field columnWidth CDATA #IMPLIED >
+<!ATTLIST field align (center|left|right) #IMPLIED >
+<!ATTLIST field titleBgColor (BLACK|WHITE|RED|BRIGHT_GREEN|BLUE|YELLOW|PINK|TURQUOISE|DARK_RED|GREEN|DARK_BLUE|DARK_YELLOW|VIOLET|TEAL|GREY_25_PERCENT|GREY_50_PERCENT|CORNFLOWER_BLUE|MAROON|LEMON_CHIFFON|ORCHID|CORAL|ROYAL_BLUE|LIGHT_CORNFLOWER_BLUE|SKY_BLUE|LIGHT_TURQUOISE|LIGHT_GREEN|LIGHT_YELLOW|PALE_BLUE|ROSE|LAVENDER|TAN|LIGHT_BLUE|AQUA|LIME|GOLD|LIGHT_ORANGE|ORANGE|BLUE_GREY|GREY_40_PERCENT|DARK_TEAL|SEA_GREEN|DARK_GREEN|OLIVE_GREEN|BROWN|PLUM|INDIGO|GREY_80_PERCENT|AUTOMATIC|black|white|red|bright_green|blue|yellow|pink|turquoise|dark_red|green|dark_blue|dark_yellow|violet|teal|grey_25_percent|grey_50_percent|cornflower_blue|maroon|lemon_chiffon|orchid|coral|royal_blue|light_cornflower_blue|sky_blue|light_turquoise|light_green|light_yellow|pale_blue|rose|lavender|tan|light_blue|aqua|lime|gold|light_orange|orange|blue_grey|grey_40_percent|dark_teal|sea_green|dark_green|olive_green|brown|plum|indigo|grey_80_percent|automatic) #IMPLIED >
+<!ATTLIST field titleFountColor (BLACK|WHITE|RED|BRIGHT_GREEN|BLUE|YELLOW|PINK|TURQUOISE|DARK_RED|GREEN|DARK_BLUE|DARK_YELLOW|VIOLET|TEAL|GREY_25_PERCENT|GREY_50_PERCENT|CORNFLOWER_BLUE|MAROON|LEMON_CHIFFON|ORCHID|CORAL|ROYAL_BLUE|LIGHT_CORNFLOWER_BLUE|SKY_BLUE|LIGHT_TURQUOISE|LIGHT_GREEN|LIGHT_YELLOW|PALE_BLUE|ROSE|LAVENDER|TAN|LIGHT_BLUE|AQUA|LIME|GOLD|LIGHT_ORANGE|ORANGE|BLUE_GREY|GREY_40_PERCENT|DARK_TEAL|SEA_GREEN|DARK_GREEN|OLIVE_GREEN|BROWN|PLUM|INDIGO|GREY_80_PERCENT|AUTOMATIC|black|white|red|bright_green|blue|yellow|pink|turquoise|dark_red|green|dark_blue|dark_yellow|violet|teal|grey_25_percent|grey_50_percent|cornflower_blue|maroon|lemon_chiffon|orchid|coral|royal_blue|light_cornflower_blue|sky_blue|light_turquoise|light_green|light_yellow|pale_blue|rose|lavender|tan|light_blue|aqua|lime|gold|light_orange|orange|blue_grey|grey_40_percent|dark_teal|sea_green|dark_green|olive_green|brown|plum|indigo|grey_80_percent|automatic) #IMPLIED >
+<!ATTLIST field uniformStyle (true|false) #IMPLIED >
+<!ATTLIST field forceText (true|false) #IMPLIED >
+<!ATTLIST field decimalFormatPattern CDATA #IMPLIED >
+<!ATTLIST field roundingMode (UP|DOWN|CEILING|FLOOR|HALF_UP|HALF_DOWN|HALF_EVEN|UNNECESSARY|up|down|ceiling|floor|half_up|half_down|half_even|unnecessary) #IMPLIED >
+<!ATTLIST field otherConfig CDATA #IMPLIED >
+<!ATTLIST field defaultValue CDATA #IMPLIED >
